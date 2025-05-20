@@ -1,0 +1,915 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white-color: #fff;
+  --text-color1: #333;
+  --text-color2: #262626;
+  --text-color3: #828282;
+  --input-placeholder-color: rgb(51, 51, 51, 0.5);
+  --heading-color1: #333333;
+  --button-color1: #3CA033;
+  --button-color1-hover: #348b2c;
+  --black-color: #000;
+  --sidebar-text-color: #080101;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+
+/* login Page */
+
+.loginInspectionDiv,
+.forgetInspectionDiv {
+  /* background-image: url("../assets/images/login-smog-banner.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.InspectionLoginForm,
+.InspectionForgetPasswordForm {
+  box-shadow: 9px 9px 18px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(232, 232, 232, 0.9) 100%
+  );
+  border-radius: 20px;
+  width: 75%;
+}
+
+.InspectionLoginForm form,
+.InspectionForgetPasswordForm form {
+  padding: 0px 30px;
+}
+
+.InspectionLoginForm .form-label,
+.InspectionForgetPasswordForm .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--text-color1);
+}
+
+.InspectionLoginForm .form-check-label,
+.InspectionForgetPasswordForm .form-check-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 167%;
+  letter-spacing: 0.03em;
+  color: var(--text-color1);
+}
+
+.InspectionLoginForm a,
+.InspectionForgetPasswordForm a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 104%;
+  text-align: right;
+  color: var(--text-color1);
+}
+
+.InspectionlogoHead1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--heading-color1);
+}
+
+.InspectionLoginForm input[type="email"],
+.InspectionLoginForm input[type="password"],
+.InspectionForgetPasswordForm input[type="email"],
+.InspectionForgetPasswordForm input[type="password"] {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background: var(--white-color);
+}
+
+.InspectionLoginForm input::placeholder,
+.InspectionForgetPasswordForm input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--input-placeholder-color);
+}
+
+.InspectionLoginForm1 img,
+.InspectionForgetPasswordForm1 img {
+  max-width: 140px;
+  width: 100%;
+}
+
+.loginInspectionBtn {
+  border-radius: 10px;
+  height: 50px;
+  background-color: var(--button-color1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white-color);
+  width: 100%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #3ca033;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #3ca033;
+}
+.loginInspectionBtn:hover {
+  background-color: var(--button-color1-hover);
+  color: var(--white-color);
+}
+
+.form-switch .form-check-input,
+.form-switch .form-check-label {
+  cursor: pointer;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--button-color1);
+  border-color: var(--button-color1);
+}
+
+.form-switch .form-check-input:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--button-color1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--button-color1);
+}
+
+/* scroll bar */
+
+/* Dashboard Page */
+
+.main-header {
+  background-color: var(--white-color);
+  position: fixed;
+  width: -webkit-fill-available;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+.main-sidebar .brand-text1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.main-sidebar .brand-text2 {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.InspectionSideBar .nav-item svg {
+  width: 25px;
+}
+
+.InspectionSideBar .nav-item:hover,
+.InspectionSideBar .nav-item.active .nav-link {
+  color: var(--white-color);
+}
+
+.InspectionSideBar {
+  height: 60vh;
+  margin-bottom: 0px;
+}
+
+.os-host-overflow-x {
+  transition: height 0.3s ease-in-out;
+  height: 75vh;
+}
+
+.nav-sidebar .nav-item.active {
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+
+.nav-sidebar .nav-item-dropdown.active {
+  background-color: transparent;
+}
+
+.nav-sidebar .nav-item-dropdown.active a {
+  background-color: var(--white-color) !important;
+  border-radius: 10px !important;
+}
+
+.nav-sidebar .nav-item-dropdown.active .nav-treeview .nav-item a,
+.nav-sidebar .nav-item-dropdown.active .nav-treeview .nav-item.active {
+  background-color: transparent !important;
+}
+
+.nav-sidebar
+  .nav-item-dropdown.active
+  .nav-treeview
+  .nav-item.active
+  .navItemsName {
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.nav-sidebar .nav-item-dropdown .nav-treeview .nav-item .navItemsName {
+  color: var(--sidebar-text-color);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.nav-sidebar .nav-item.active .navItemsName {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-color1);
+}
+
+.nav-sidebar .nav-item .navItemsName {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-sidebar .nav-item.active a svg path {
+  fill: var(--text-color1);
+}
+
+.InspectionSideBar .nav-item:nth-child(5).active a svg path,
+.InspectionSideBar .nav-item:nth-child(2).active a svg path {
+  stroke: var(--text-color1);
+  fill: none;
+}
+
+/* .nav-sidebar > .nav-item.menu-open > .nav-link,
+.nav-sidebar > .nav-item:hover > .nav-link,
+.nav-sidebar > .nav-item > .nav-link:focus,
+.nav-sidebar .nav-item.active .nav-link {
+  background-color: #558ed6;
+} */
+
+.highlighted {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+.greenBackground {
+  background-color: #198754d1 !important; /* Example highlight color */
+  font-weight: bold;
+  color: white !important;
+}
+
+.inspection-link{
+  display: block;
+  margin: 0px;
+  width: 100%;
+  /*padding: 0.75rem;*/
+  /*height: 100%;*/
+  text-decoration: none;
+  color: white;
+}
+
+.inspection-link:hover{
+  color: white;
+}
+
+.calendar-td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 1rem;
+}
+
+.date-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.redBackground {
+    background-color: #dc3545 !important; /* No activity */
+    color: white !important;
+}
+
+.yellowBackground {
+    background-color: #ffc107ad !important; /* Office days */
+    color: black !important;
+}
+
+.normalBackground {
+    background-color: transparent !important; /* Off days */
+    color: black !important;
+}
+
+.normal-cell {
+    background-color: #f8f9fa; /* Normal days like off days */
+}
+
+.normal-cell{
+  padding: 0.75rem !important;
+}
+
+.custom-activity-row {
+  display: flex;
+  justify-content: center;
+}
+
+.temp-activity-div {
+  width: 100%;
+  max-width: 100%; /* Ensures the card doesn't exceed the viewport width */
+  height: 400px;
+  display: flex;
+  padding: 20px;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  background-color: #fff; /* Optional: background color for better visibility */
+  border: 1px solid #ccc; /* Optional: border for better visibility */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+
+.table-activity-card{
+  width: 100%;
+}
+
+.nav-treeview .nav-item.active,
+.nav-treeview .nav-item.active .nav-link {
+  background-color: #004aa5 !important;
+}
+
+.nav-treeview .nav-item:hover .nav-link {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.nav-treeview .nav-item .nav-link {
+  background-color: transparent !important;
+}
+
+.navItemsName {
+  font-size: 14px;
+}
+
+.dashboardHeading {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+  margin-top: -120px;  /* Moves it closer to the navbar */
+  padding-top: 10px;  /* Adds space if needed */
+}
+
+.dashboardHeading1 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #9daab6;
+}
+
+.content-wrapper {
+  padding-top: 105px;
+}
+
+.commentDropdowns {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.profileDropdown {
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.commentDropdowns .dropdown-menu {
+  width: max-content;
+}
+
+.commentDropdowns i {
+  color: #1a1a1a;
+}
+
+.adminUsername {
+  line-height: 17px;
+}
+
+.adminUsername1 {
+  color: var(--text-color2);
+  font-weight: 400;
+  font-size: 15px;
+  display: inline-block;
+  max-width: 142px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.adminUsername2 {
+  color: var(--text-color3);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.modalCancelBtn {
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--button-color1);
+  background: transparent;
+  color: var(--text-color1);
+  text-align: center;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+
+.modalLogoutBtn {
+  background-color: var(--button-color1);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--button-color1);
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.modalCancelBtn:hover {
+  background-color: #d3d3d3 !important;
+}
+
+.modalLogoutBtn:hover {
+  background-color: var(--button-color1-hover);
+}
+
+.modalPermissionHeading {
+  color: #232629;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+.logoutModal .modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-treeview .nav-item .nav-link {
+  padding-left: 20.5px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .nav-treeview .nav-item .nav-link {
+  padding-left: 0px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .nav-link {
+  padding-left: 17px;
+  padding-right: 0px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .logoutDash-btn .pe-4 {
+  padding-left: 2px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .brand-link {
+  padding-left: 0px;
+}
+
+.sidebar-mini.sidebar-collapse .sidebarLogoutText {
+  display: none;
+  transition: display 0.3s ease;
+}
+
+.sidebar-mini.sidebar-collapse
+  .main-sidebar:not(.sidebar-no-expand):hover
+  .sidebarLogoutText {
+  display: inline-block;
+}
+
+.logoutDash-btn {
+  border-radius: 9px;
+  background-color: var(--white-color);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color1);
+  width: 90%;
+}
+
+.logoutDash-btn:hover {
+  color: var(--text-color1);
+  background-color: var(--sidebar-text-color);
+}
+/* .Total_Land.Land_item1 {
+  background: #fff3b3;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+.Total_Land.Land_item2 {
+  background: #DAF4FF;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+.Total_Land.Land_item3 {
+  background: #f3a239;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+} */
+.btn-primary{
+  background-color: var(--button-color1);
+  border-color: var(--button-color1);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white-color);
+}
+.btn-primary:hover{
+  background-color: var(--button-color1);
+  border-color: var(--button-color1);
+  color: var(--white-color);
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active{
+  background-color: var(--button-color1);
+  border-color: var(--button-color1);
+}
+.Total_Land p {
+  margin-bottom: 10px;
+}
+.Total_Land h3{
+  margin: 0;
+  font-weight: 700;
+}
+.dashboardHeading h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #232629;
+}
+
+.dashboardHeading h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #232629;
+}
+
+input,select,
+.dashboardSearch span {
+  background-color: #f6f6f6 !important;
+  border-radius: 7px !important;
+  height: 48px !important;
+}
+
+.InspectionDashboard .card {
+  border-radius: 11px;
+  
+}
+
+.InspectionDashCard1 {
+  border: 0.84px solid #919191;
+}
+
+.InspectionDashCard2 {
+  border: 0.84px solid #2a51da;
+}
+
+.InspectionDashCard3 {
+  border: 0.84px solid #ffa688;
+}
+
+.InspectionDashCard4 {
+    border: 0.84px solid #f10413;
+  }
+
+.cardHeading p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #080d1c;
+}
+
+.InspectionDashboard .card .card-body ul li h6 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #080d1c;
+}
+
+.InspectionDashboard .card .card-body ul li p {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #71737c;
+}
+
+/* user management Page */
+.usersInspectionTable .dataTables_length,
+.usersInspectionTable .dataTables_filter {
+  display: none;
+}
+
+.addUserBtn {
+  background-color: var(--button-color1);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color1);
+  height: 45px;
+}
+
+.addUserBtn:hover {
+  background-color: var(--button-color1-hover);
+  color: var(--white-color);
+}
+
+#DataTables_Table_0_previous a {
+  border-radius: 7px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  background: #f5f5f5;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #282828;
+  cursor: pointer;
+  border: none;
+}
+
+#DataTables_Table_0_next a {
+  border-radius: 7px;
+  background-color: var(--button-color1);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 15px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+}
+
+.paginate_button .page-link {
+  border: none;
+  background-color: transparent;
+  color: #92929d;
+  font-weight: 400;
+}
+
+.page-item.active .page-link {
+  color: var(--text-color1);
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.userManagementInspectionPage h2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c2434;
+}
+
+.usersInspectionTable th {
+  font-weight: 600;
+  font-size: 15px;
+  color: #969696;
+}
+
+.usersInspectionTable td {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color1);
+}
+
+.userManagementCheckbox {
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  border: 1px solid #e2e2e2;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #acacac;
+}
+
+.userManagementCheckbox:checked + .userManagementCheckbox {
+  background-color: #ebffef !important;
+  border-color: #00b913 !important;
+  color: #00b913 !important;
+}
+
+.userManagementCheckbox2:checked + .userManagementCheckbox {
+  background-color: #f1f6ff !important;
+  border-color: #0085cf !important;
+  color: #0085cf !important;
+}
+
+.userManagementCheckbox1:checked + .userManagementCheckbox {
+  background-color: #fff1f1 !important;
+  border-color: #ef3e37 !important;
+  color: #ef3e37 !important;
+}
+
+.userManagementCheckbox:hover {
+  cursor: pointer;
+  background-color: var(--white-color) !important;
+  border-color: #e2e2e2 !important;
+}
+
+label{
+    font-size: 15px;
+    font-weight: 500 !important;
+}
+
+.table thead th{
+    font-weight: 600 !important;
+    background-color: #1a6d22;
+}
+
+@media screen and (min-width: 1700px) {
+  .InspectionSideBar {
+    height: 70vh;
+  }
+
+  .InspectionLoginForm input[type="text"],
+  .InspectionLoginForm input[type="password"] {
+    height: 50px;
+  }
+
+  .loginInspectionBtn {
+    height: 50px;
+  }
+
+  .InspectionLoginForm {
+    width: 65%;
+  }
+
+  .InspectionLoginForm .form-label {
+    font-size: 18px;
+  }
+
+  .InspectionLoginForm .form-check-label {
+    font-size: 16px;
+  }
+
+  .InspectionLoginForm a {
+    font-size: 16px;
+  }
+
+  .forgetInspectionDiv .row {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .forgetInspectionDiv .row {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .forgetInspectionDiv .row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .InspectionLoginForm form {
+    padding: 0px 40px;
+  }
+
+  .InspectionLoginForm {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .InspectionLoginForm,
+  .InspectionForgetPasswordForm {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .InspectionLoginForm,
+  .InspectionForgetPasswordForm {
+    width: 50%;
+  }
+
+  .InspectionlogoHead1 {
+    font-size: 29px;
+  }
+
+  .main-header {
+    margin-left: 15px !important;
+  }
+
+  .content-wrapper > .content {
+    padding: 0px 1rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .InspectionLoginForm,
+  .InspectionForgetPasswordForm {
+    width: 60%;
+  }
+
+  .adminUsername1 {
+    max-width: 100px;
+  }
+
+  .preloader img {
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .InspectionLoginForm,
+  .InspectionForgetPasswordForm {
+    width: 70%;
+  }
+
+  .InspectionSideBar {
+    height: 75vh;
+  }
+
+  .preloader img {
+    width: 25% !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .InspectionLoginForm {
+    width: 100%;
+    transform: translateY(6%);
+  }
+
+  .InspectionForgetPasswordForm {
+    width: 100%;
+  }
+
+  .InspectionLoginForm form {
+    padding: 0 25px;
+  }
+
+  .preloader img {
+    width: 35% !important;
+  }
+
+  .InspectionlogoHead1 {
+    font-size: 25px;
+  }
+
+  .loginInspectionBtn {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .InspectionLoginForm {
+    transform: translateY(4%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .InspectionLoginForm {
+    transform: translateY(0%);
+  }
+}

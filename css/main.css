@@ -1,0 +1,563 @@
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    
+  }
+  
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100vh;
+    top: 70;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-left: 0px;
+  }
+
+  #captureBtn{
+    background-color: rgb(59, 161, 59); /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 8px 18px; /* Add padding */
+    font-size: 14px; /* Set font size */
+    margin-top: 4px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor */
+  }
+
+  Style the sidenav links and the dropdown button
+  .sidenav a, .dropdown-btn {
+    padding: 12px 8px 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(48, 109, 48);
+    color: white;
+    margin-top: -16px;
+    border-radius: 7px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn2 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn3 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn4 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn5 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn6 {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn7 {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #111;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn2:hover {
+    color: #111;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn3:hover {
+    color: #111;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn4:hover {
+    color: #111;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn5:hover {
+    color: #111;
+  }
+
+   /* On mouse-over */
+   .sidenav a:hover, .dropdown-btn6:hover {
+    color: #111;
+  }
+
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn7:hover {
+    color: #111;
+  }
+  
+   a.closebtn {
+    font-size: 20px;
+    color: white;
+    padding: 1px 10px 12px;
+    border: none;
+    background-color: #3b3b3b;
+    width: 32px;
+    height: 32px;;
+    display: block;
+    margin-left: 300px;
+    margin-top: 2px;
+  }
+  
+  .openbtn {
+    font-size: 8px;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    display: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  a.closebtn:hover {
+    color: white;
+    
+  }
+  /* Main content */
+  .main {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+    margin-top: 2px;
+    margin-left: -15px; /* Same as the width of the sidenav */
+    font-size: 15px; /* Increased text to enable scrolling */
+    padding: 2px 20px;
+    overflow: hidden;
+    /*margin : auto;*/
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container2 {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container3 {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container4 {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container5 {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container6 {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container7 {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+  
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  .header {
+    overflow: hidden;
+    padding: 10px 10px;
+    color: #FFFFFF  ;
+    background-color: #3b3b3b;
+  }
+  
+  .header img {
+    float: left;
+    padding-left: 10px;
+  }
+  
+  .header h1 {
+    position: relative;
+    left: 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    height: 32px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 12px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header-right a{
+    float: left;
+    color: white;
+    text-align: center;
+    height: 32px;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 12px; 
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .header a.logo {
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .header a.sublogo {
+    color: #CFCFCF;
+    font-size: small;
+    margin-top: 16px;
+    margin-left: -360px;
+    padding-left: 20px;
+  }
+  
+  .header a:hover {
+  
+    color: white;
+  }
+  
+  .header-right a:hover{
+    background-color: dodgerblue;
+  }
+  
+  .header a.active {
+    color: black;
+  }
+  
+  .header-right {
+    float: right;
+    font-size: 5px;
+  }
+  
+  .dropdown-container{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: -8px;
+    background-color: white;
+    font-size: 13px;
+    color: black;
+    display: block;
+  }
+  .dropdown-container2{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+  
+  .dropdown-container3{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+  
+  .dropdown-container4{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+  
+  
+  .dropdown-container5{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+  .dropdown-container6{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+
+  .dropdown-container7{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    width: 218px; 
+    font-size: 13px;
+    color: black;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 14px;}
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+   
+  }
+  
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-size: 15px;
+  }
+  .dropdown{
+    font-size: 5px;
+    padding-top: 2px;
+  }     
+.dropdown-container .DropDown .label{
+    margin-top: 8px;
+    font-size: 14px;
+ }
+
+.select{
+    padding-top: 2px;
+    margin-top: 2px;
+ }
+ .btnGroup{
+  padding-top: 10px;
+ }
+ .chkBox{
+  padding-top: 10px;
+ }
+ .DrawContainer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .MeasurementContainer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+td{
+  padding: 3px;
+}
+
+#togglebtn{
+  background-color: #3b3b3b;
+  color: #FFFFFF;
+  margin-left: -19px;
+  padding-left: 4px;
+  font-size: 10px;
+  width: 18px;
+  margin-top: 50vh;
+}
+.round {
+  border-radius: 50%;
+}
+ 
+/* .checkbox-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+} */
+       .title-container {
+        background-color: rgb(48, 109, 48); /* Green background */
+        color: white; /* Text color */
+        padding: 10px 15px;
+        font-size: 15px;
+        /* font-weight: bold; */
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .title-container::before {
+    content: "🗂"; /* Resources folder emoji */
+    margin-right: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #130909;
+  transition: color 0.3s ease;
+}
+
+.checkbox-label:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Slightly enlarge the checkbox */
+  cursor: pointer;
+}
+
+.form-select {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #130909;
+  transition: color 0.3s ease;
+}
